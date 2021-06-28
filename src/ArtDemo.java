@@ -32,37 +32,30 @@ public class ArtDemo extends ConsoleProgram{
         do {
             println(PROMPT_MESSAGE);
             choice = readInt(">> ");
+            canvas.removeAll(); // clear canvas for new art
             switch (choice) {
                 case 1:
-                    canvas.removeAll(); // clear canvas for new art
                     arcArt();
                     break;
                 case 2:
-                    canvas.removeAll();
                     imageArt();
                     break;
                 case 3:
-                    canvas.removeAll();
                     labelArt();
                     break;
                 case 4:
-                    canvas.removeAll();
                     lineArt();
                     break;
                 case 5:
-                    canvas.removeAll();
                     ovalArt();
                     break;
                 case 6:
-                    canvas.removeAll();
                     rectArt();
                     break;
                 case 7:
-                    canvas.removeAll();
                     polygonArt();
                     break;
                 case 8:
-                    canvas.removeAll();
                     randomArt();
                     break;
                 default:
